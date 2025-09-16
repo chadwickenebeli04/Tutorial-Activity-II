@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Feedback Form</title>
+        <link rel="stylesheet" type="text/css" href="style.css"
+    </head>
+    <body>
+        <div id="wrapper">
+            <form action="mailto:ahmed.shekih@ontariotechu.net?subject=Feedback from website"
+            enctype="text/plain" method="post" name="FeedbackForm"
+            
+            >  <!--Form tag + action details-->
+
+        <p> <!-- This means paragraph's or paragraph: <p> -->
+            <label for="FName">First Name</label>
+            <input type="text" name="FName" size="40"
+            placeholder="Enter your first name" required>
+
+        </p>
+
+        <p> <!-- This means paragraph's or paragraph: <p> -->
+            <label for="LName">Last Name</label>
+            <input type="text" name="LName" size="40"
+            placeholder="Enter your last name" required>
+
+        </p>
+
+        <p> <!-- This means paragraph's or paragraph: <p> -->
+            <label for="Email">Email: </label>
+            <input type="email" name="Email" size="40"
+            placeholder="Enter your email address" required>
+        </p>
+
+        <p>
+            <label for="comments">Comments: </label>
+            <br>
+            <textarea name="comments" cols="60" rows="3"></textarea>
+        </p>
+        
+        <p>
+            <input type="checkbox" name="maillist">
+            <!-- The input type goes first for the maillist checkbox, THEN we input the label type. -->
+            <label for="maillist">Put me in your e-list</label>
+        </p>
+
+        <p>
+            <label for="where">How did you find us</label>
+            <select name="where">
+                <option value="Search Engine">Search Engine</option>
+                <option value="Social Media">Social Media</option>
+            </select>
+
+        </p>
+
+        <p>
+            <p><label for="countries">Where do you live?</label>
+            <input list="countries">
+            <datalist id="countries"> <!-- Instead of writing select, we write down "datalist "-->
+            <option value="Afghanistan">
+            <option value="Albania"> <!-- And instead of using name, we use "list" -->
+            <option value="Algeria">
+            <option value="Andorra">
+            <option value="Angola">
+            <option value="Antigua and Barbuda">
+            <option value="Argentina">
+            <option value="Armenia">
+            <option value="Aruba">
+            <option value="Australia">
+            <option value="Austria">
+            <option value="Azerbaijan">
+        </datalist>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+
+        </p>
+            </form>
+            <h3>Captcha</h3>
+            <form oninput="x.value=parseInt(a.value) + parseInt(b.value)">
+                <input type="number" id="a"> + <input type="number" id="b">
+                <output name="x" for="a b">
+                </output>
+
+            </form>
+        </div>
+    </body>
+</html>

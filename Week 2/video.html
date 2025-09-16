@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>HTML-5 Video Example</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="video.js" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+        <video 
+        id="video"
+        width="320" 
+        height="240" 
+        controls 
+        autoplay muted loop
+        poster="on_record.png"
+        preload="auto"> <!--Automatically preload's the page-->
+        <!--
+        This is the video tag -native approach. the controls sections allows us to play the video. auto play
+        is used so that when one someone opens the webpage, the video starts playing immedietly. The "loop" command loops the video.
+        Poster is used for the png of our video that we are currently using. "id" for video is used as a tag for the specific video in use.
+        -->
+            
+            <source src="on_record.mp4" type="video/mp4"> <!--Opera/Safari mp4 extension-->
+            <source src="on_record.ogv" type="video/ogv"> <!--Chrome browser ogv exntension-->
+        </video>
+        <br> <!--When the video is over, break the line and then display the play or pause button for the video.-->
+        <button onclick="playPause()">Play or Pause the video</button> 
+        <!--This is the button tag. It must be outside the video tag so that it is not not behind the actual video.-->
+        </div>
+        <!--Javascript code-->
+        <!--Document is a method, video is an object-->
+        <!--.pause and .play are built-in methods from Javascript-->
+        <!--We can create the a video.js file without the script tag (script tag has been removed). -->
+        <!--CSS 3 Code (Java Script code above ^ )-->
+        <!--This is used for style.css (web page)-->
+    </body>
+</html>

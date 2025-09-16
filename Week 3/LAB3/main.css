@@ -1,0 +1,26 @@
+header
+
+{
+    text-align: center;
+    background-color: red;
+    color: white; /* this is used for the text displayed in index html for the header "LOGO GOES HERE" */
+
+}
+
+#customfooter /* we used the hashtag to identify the id - ONLY USED FOR ONE SINGLE ELEMENT */
+{
+    text-align: center;
+    background-color: blue;
+    color: black;
+        
+}
+
+#first
+{
+    color: green;
+}
+
+.second
+{
+    color: orangered;
+}
